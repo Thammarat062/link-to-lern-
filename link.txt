@@ -1,1 +1,8 @@
 http://www.akexorcist.com/2012/10/android-code-chat-wlan-tcp-socket.html
+https://www.youtube.com/watch?v=bo4briWYa3A
+
+//use to react native
+react-native init ProjectName --version 0.55.4
+
+//video chat sinch
+https://www.youtube.com/watch?v=NkvyD6AQdfY
