@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	 crossorigin="anonymous">
+
+	<link rel="stylesheet" href="style.min.css" type="text/css" media="screen" />
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	 crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="form.js"></script>
+	<title>Form</title>
+</head>
+
+<body class="background" background="img/text2.jpg">
+
+	<nav class="navbar navbar-fixed-top">
+		<div class="navigation-overlay">
+			<div class="container-fluid relative">
+				<div class="row">
+
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+
+						<!-- Logo -->
+						<div class="logo-container">
+							<div class="logo-wrap local-scroll">
+								<a href=""></a>
+							</div>
+						</div>
+					</div> <!-- end navbar-header -->
+
+
+					<div class="col-md-8 col-xs-12 nav-wrap">
+						<div class="collapse navbar-collapse text-right" id="navbar-collapse">
+
+							<ul class="nav navbar-nav local-scroll text-left">
+
+								<li class="">
+									<a onclick="" href="#">SIGN IN</a>
+								</li>
+								<li>
+									<a onclick="" href="#">LOGIN</a>
+								</li>
+								<li>
+									<a onclick="" href="#">FORGOT PASSWORD </a>
+								</li>
+
+							</ul>
+						</div>
+					</div> <!-- end col -->
+				</div> <!-- end row -->
+			</div> <!-- end container -->
+		</div> <!-- end navigation -->
+	</nav> <!-- end navbar -->
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+			<form class="stepform" action="" method="post">
+					<fieldset class="sf-step">
+							
+						<h3 class="center-text">Free registration</h3>
+						<p>
+							<h4 class="center-text">in untder 1 minute</h4>
+						</p>
+						<p>
+							<h5 class="center-text">sex ?</h5>
+							<br>
+							<div class="center">
+									<a   onclick="gender(0)" class="fa fa-mars"></a>
+									<a    onclick="gender(1)"   class="fa fa fa-venus"></a>
+								</div>
+							</p>
+							<p>
+								<div class="text1">
+									<p id="gender" class="center">
+										</div>
+							</p>
+					</fieldset>
+					<fieldset class="sf-step">
+						<h3 class="center-text">Free registration</h3>
+						<p>
+							<h4 class="center-text">in untder 1 minute</h4>
+						</p>
+						<p>
+							<h5 class="center-text">who are you looking for ?</h5>
+							<br>
+							<div class="center"> 
+									
+								<a   onclick="lookinggender(0)" class="fa fa-mars"></a>
+								<a   onclick="lookinggender(1)"   class="fa fa fa-venus"></a>
+							</div>
+						</p>
+						<p>
+								<div class="text1">
+										<p id="lookinggender" class="center">
+											</div>
+						</p>
+					</fieldset>
+					<fieldset class="sf-step">
+						<h2 class="">Create your account</h2>
+						<p>
+							<label for="username">User name</label>
+							<input id="username" class="form-control" name="username" />
+						</p>
+						<p>
+							<label for="email">Email</label>
+							<input id="email" class="form-control" name="email" placeholder="" type="email" AUTOCOMPLETE=OFF />
+						</p>
+						<p>
+							<label for="password">Password</label>
+							<input id="password" class="form-control" name="password" type="password" AUTOCOMPLETE=OFF />
+						</p>
+					</fieldset>
+					<fieldset class="sf-step">
+						<h3 class="center"> What you are looking for?</h3>
+						<div class="form-group">
+							<br>
+							<br>
+							<p class="center">
+								<label for="">between</label>
+								<select class="1-100 "></select>
+								<label for="">and</label>
+								<select class="1-100 "></select>
+								<label for="">years</label>
+							</p>
+						</div>
+					</fieldset>
+					<fieldset class="sf-step">
+						<h3 class="center">Which region are you from?</h3>
+						<br>
+						<br>
+						<div class="center">
+							<select name="field_region" size="1" class="inputbox" id="field_region">
+								<option value="all">Search all regions</option>
+								<option value="North Africa">North Africa</option>
+								<option value="East Africa">East Africa</option>
+								<option value="Southern Africa">Southern Africa</option>
+								<option value="Central Africa">Central Africa</option>
+								<option value="West Africa">West Africa</option>
+								<option value="Indian Ocean Islands">Indian Ocean Islands</option>
+							</select>
+						</div>
+					</fieldset>
+					<fieldset class="sf-step">
+						<h3 class="center">You are in a relationship?</h3>
+						<br>
+						<br>
+						<div class="center">
+							<select name="" size="1" class="inputbox" id="field_region">
+								<option value="Sinle">Single</option>
+								<option value="Married">Married</option>
+							</select>
+						</div>
+						<p class="text-right">
+							<input type="submit" value="Submit" name='submit' class="btn btn-success">
+						</p>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
